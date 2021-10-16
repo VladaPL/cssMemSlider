@@ -19,3 +19,59 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.carousel-text {
+    color: white;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    max-width: 900px;
+    height: auto;
+}
+
+.carousel-items {
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.carousel-items. carousel-item  {
+    width: 20%;
+}
+
+.carousel-items .carousel-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel-items input {
+    position: absolute;
+    visibility: hidden;
+}
+
+.carousel-nav {
+    position: absolute;
+    top: 610px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.carousel-nav .nav-item {
+    width: 20px;
+    height: 20px;
+    border: 2px solid tomato;
+    border-radius: 50px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.carousel-nav .nav-item:hover {
+    background-color: tomato;
+}
