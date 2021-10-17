@@ -20,10 +20,30 @@ body {
   justify-content: center;
 }
 
+/*@media (max-width: 360px) {
+  .wrapper {
+    width: 360px;
+  }
+  .carousel-items {
+    height: 400px;
+  }
+  img {
+    width: 360px;
+  }
+  .carousel-text_1 {
+    top: 200px;
+  }
+
+  .nav-item {
+    top: 160px;
+    justify-content: center;
+  }
+}*/
+
 .carousel-text {
   color: white;
   font-family: sans-serif;
-  font-size:2rem;
+  font-size: 2rem;
 }
 
 .carousel {
@@ -76,18 +96,23 @@ body {
   background-color: tomato;
 }
 
+.carousel-nav .nav-item:checked {
+    background-color: tomato;
+}
+
+
 .carousel-text {
   margin: 60px;
   margin-left: 10px;
 }
 
 .carousel-text_1 {
-    visibility: hidden;
-    position: absolute;
-    color: white;
-    font-family: sans-serif;
-    font-size:2rem;
-    top: 700px;
+  visibility: hidden;
+  position: absolute;
+  color: white;
+  font-family: sans-serif;
+  font-size: 2rem;
+  top: 700px;
 }
 
 #slider_1:checked ~ .carousel-item_1 {
@@ -105,5 +130,5 @@ body {
 }
 
 #slider_1:checked ~ .carousel-text_1 {
-    visibility: visible;
-  }
+  visibility: visible;
+}
