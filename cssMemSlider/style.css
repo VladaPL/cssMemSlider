@@ -23,13 +23,13 @@ body {
 .carousel-text {
   color: white;
   font-family: sans-serif;
-  font-size: 30px;
+  font-size:2rem;
 }
 
 .carousel {
   position: relative;
   overflow: hidden;
-  max-width: 650px;
+  max-width: 650px; /* 650px */
   height: auto;
 }
 
@@ -41,6 +41,7 @@ body {
 
 .carousel-items. carousel-item {
   width: 20%;
+  transition: 0.7s;
 }
 
 .carousel-items .carousel-item img {
@@ -80,6 +81,15 @@ body {
   margin-left: 10px;
 }
 
+.carousel-text_1 {
+    visibility: hidden;
+    position: absolute;
+    color: white;
+    font-family: sans-serif;
+    font-size:2rem;
+    top: 700px;
+}
+
 #slider_1:checked ~ .carousel-item_1 {
   margin-left: 0;
 }
@@ -93,3 +103,7 @@ body {
 #slider_4:checked ~ .carousel-item_4 {
   margin-left: -60%;
 }
+
+#slider_1:checked ~ .carousel-text_1 {
+    visibility: visible;
+  }
